@@ -14,5 +14,5 @@ fi
 
 export KAFKA_PROPERTIES_OVERRIDES="--override broker.id=$(hostname | awk -F'-' '{print $2}')"
 
-bin/kafka-server-start.sh /opt/mounted/config/server.properties ${KAFKA_PROPERTIES_OVERRIDES}
+bin/kafka-server-start.sh /opt/kafka/config/server.properties ${KAFKA_PROPERTIES_OVERRIDES}
 
